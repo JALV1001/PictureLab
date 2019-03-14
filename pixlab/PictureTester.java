@@ -51,8 +51,15 @@ public class PictureTester
     swan.explore();
   }
   
-  
+  public static void testCopy()
+  {
+      Picture ocean = new Picture("beach.JPG");
+      Picture daddy = new Picture("snowman.JPG");
+      ocean.copy(daddy, 10, 10, 60, 160, 180, 230); 
+      ocean.explore();
+    }
     
+  
   
   /** Main method for testing.  Every class can have a main
     * method in Java */
@@ -83,5 +90,6 @@ public class PictureTester
     //testSetRedToHalfValueInTopHalf();
     //testClearBlueOverValue(200);
     //testGetAverageForColumn(0);
+    testCopy();
   }
 }
